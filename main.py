@@ -19,9 +19,12 @@ df_2 = pd.read_csv(r'C:\Users\Fajar Rachmadi\Desktop\CODE\DatSciFinalSem5\Data\c
 
 # PREPARING DATA ====================================================================================================
 
-df = pd.concat([df_1,df_2]).drop_duplicates().reset_index(drop=True)
-print(df.head(20))
+# df = pd.concat([df_1,df_2]).drop_duplicates().reset_index(drop=True)
+# # print(df.head(20))
 
-print(df.sort_values(by='year'))
+# # print(df.sort_values(by='year'))
 
-df.to_csv(r'C:\Users\Fajar Rachmadi\Desktop\CODE\DatSciFinalSem5\Data\final_data.csv',index=False)
+# df.to_csv(r'C:\Users\Fajar Rachmadi\Desktop\CODE\DatSciFinalSem5\Data\final_data.csv',index=False)
+
+# df.drop(index=df.index[0],axis=0,inplace=True)
+# df.info()
